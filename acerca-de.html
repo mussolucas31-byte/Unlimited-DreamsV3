@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca De — Unlimited Dreams</title>
+  <meta name="description" content="Acerca de Mariano Bernardinez, coach de mentalidad deportiva.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav nav--scrolled nav--always-dark" id="nav">
+    <a href="index.html" class="nav__logo">Unlimited Dreams</a>
+    <ul class="nav__links">
+      <li><a href="acerca-de.html" class="nav__link">Acerca De</a></li>
+      <li><a href="index.html#proximas" class="nav__link">Experiencias</a></li>
+      <li><a href="index.html#metodo" class="nav__link">Método</a></li>
+      <li><a href="index.html#historias" class="nav__link">Historias</a></li>
+    </ul>
+    <a href="index.html#unirse" class="nav__cta" id="nav-cta">Contactar</a>
+    <button class="nav__burger" id="navToggle" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav__drawer" id="navMobile">
+    <a href="acerca-de.html" class="nav__drawer-link">Acerca De</a>
+    <a href="index.html#proximas" class="nav__drawer-link">Experiencias</a>
+    <a href="index.html#metodo"   class="nav__drawer-link">Método</a>
+    <a href="index.html#historias" class="nav__drawer-link">Historias</a>
+    <a href="index.html#unirse"   class="nav__drawer-cta">Contactar</a>
+  </div>
+
+  <main style="padding-top: 140px; background: var(--white); min-height: 100vh;">
+    <section class="about-vision" id="vision">
+      <div class="wrap about-vision__inner">
+        
+        <p class="label label--accent" data-reveal>LA VISIÓN</p>
+        <h1 class="heading-xl" data-reveal data-reveal-delay="1">
+          Unlimited <span>Dreams</span>
+        </h1>
+
+        <div class="about-vision__body" data-reveal data-reveal-delay="2">
+          <p><strong>Unlimited Dreams</strong> es una comunidad de atletas comprometidos con su desarrollo dentro y fuera del deporte.</p>
+          <p>Creemos en el entrenamiento con propósito: disciplina, constancia y crecimiento personal como base del rendimiento. El deporte no es solo competencia, es una herramienta para formar carácter, mentalidad y equilibrio.</p>
+          <p>Ofrecemos un espacio para conectar, aprender y mejorar, con recursos y acompañamiento enfocados tanto en lo físico como en lo mental.</p>
+        </div>
+
+        <blockquote class="about-vision__quote" data-reveal data-reveal-delay="3">
+          "Para quienes sienten que pueden dar más, que su potencial no termina en lo que ya lograron, y que están dispuestos a trabajar para descubrir hasta dónde pueden llegar."
+        </blockquote>
+
+        <p class="about-vision__footer" data-reveal data-reveal-delay="4">
+          Si te tomás tu progreso en serio, este es tu lugar.
+        </p>
+
+        <!-- ICONS -->
+        <div class="about-vision__metrics" data-reveal data-reveal-delay="5">
+          <div class="metric">
+            <div class="metric__icon">&infin;</div>
+            <div class="metric__label">POTENCIAL</div>
+          </div>
+          <div class="metric">
+            <div class="metric__icon">1</div>
+            <div class="metric__label">COMUNIDAD</div>
+          </div>
+          <div class="metric">
+            <div class="metric__icon">AHORA</div>
+            <div class="metric__label">ES EL MOMENTO</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p class="footer__brand">Unlimited Dreams</p>
+      <nav class="footer__links">
+        <a href="terminos.html" class="footer__link">Términos</a>
+        <a href="privacidad.html" class="footer__link">Privacidad</a>
+        <a href="https://www.instagram.com/marianobernardinez_unlimited/" target="_blank" rel="noopener noreferrer" class="footer__link">Instagram</a>
+      </nav>
+      <p class="footer__copy">
+        &copy; 2026 Unlimited Dreams &mdash; <a href="https://estudioinception.com/" target="_blank" rel="noopener noreferrer">Inception Estudio</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

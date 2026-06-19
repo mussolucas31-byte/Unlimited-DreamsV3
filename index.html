@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlimited Dreams — Mariano Bernardinez</title>
+  <meta name="description"
+    content="Mariano Bernardinez, coach de mentalidad deportiva. Entrena atletas que quieren competir en su nivel más alto dominando el juego interno.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__wordmark">
+      <span>U</span><span>N</span><span>L</span><span>I</span><span>M</span><span>I</span><span>T</span><span>E</span><span>D</span>
+    </div>
+    <div class="loader__track">
+      <div class="loader__fill" id="loaderBar"></div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">Unlimited Dreams</a>
+    <ul class="nav__links">
+      <li><a href="acerca-de.html" class="nav__link">Acerca De</a></li>
+      <li><a href="#proximas" class="nav__link">Experiencias</a></li>
+      <li><a href="#metodo" class="nav__link">Método</a></li>
+      <li><a href="#historias" class="nav__link">Historias</a></li>
+    </ul>
+    <a href="#unirse" class="nav__cta" id="nav-cta">Empezar</a>
+    <button class="nav__burger" id="navToggle" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav__drawer" id="navMobile">
+    <a href="acerca-de.html" class="nav__drawer-link">Acerca De</a>
+    <a href="#proximas" class="nav__drawer-link">Experiencias</a>
+    <a href="#metodo" class="nav__drawer-link">Método</a>
+    <a href="#historias" class="nav__drawer-link">Historias</a>
+    <a href="#unirse" class="nav__drawer-cta">Empezar</a>
+  </div>
+
+  <main>
+
+    <!-- ① HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img src="assets/fondohero.webp" alt="Fondo Hero" loading="eager" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        <div class="hero__veil"></div>
+      </div>
+      <div class="hero__body">
+        <p class="label label--light" data-reveal>Mariano Bernardinez &middot; El Juego Interno</p>
+        <h1 class="hero__title" data-reveal data-reveal-delay="1">
+          El juego<br>se gana<br><em>adentro.</em>
+        </h1>
+        <p class="hero__sub" data-reveal data-reveal-delay="2">
+          Entrenamos deportistas para expandir su conciencia, fortalecer su juego interno y competir disfrutando del camino.
+        </p>
+        <ul class="hero__bullets" data-reveal data-reveal-delay="3">
+          <li>⚡ Mentoría personalizada</li>
+          <li>⚡ Experiencias transformadoras</li>
+          <li>⚡ Aplicado a la competencia real</li>
+          <li>⚡ Comunidad global</li>
+        </ul>
+        <div class="hero__actions" data-reveal data-reveal-delay="4">
+          <a href="#unirse" class="btn btn--primary" id="hero-cta">Trabajar con Mariano</a>
+          <a href="https://www.instagram.com/marianobernardinez_unlimited/" target="_blank" rel="noopener noreferrer"
+            class="btn btn--ghost" id="hero-method">Sumate a la comunidad</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ② EL DESAFÍO -->
+    <section class="challenge" id="desafio">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <h2 class="heading-lg">El desafío real</h2>
+          <p class="section-lead">No es la condición física. Es lo que pasa adentro.</p>
+        </header>
+        <ul class="challenge-list">
+
+          <!-- Atención -->
+          <li class="challenge-item accordion" data-reveal data-reveal-delay="1">
+            <div class="accordion__header">
+              <div class="challenge-item__icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"/>
+                  <circle cx="12" cy="12" r="7" stroke-dasharray="3 2"/>
+                  <line x1="12" y1="2" x2="12" y2="5"/>
+                  <line x1="12" y1="19" x2="12" y2="22"/>
+                  <line x1="2" y1="12" x2="5" y2="12"/>
+                  <line x1="19" y1="12" x2="22" y2="12"/>
+                </svg>
+              </div>
+              <svg class="accordion__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <h3 class="challenge-item__title">Atención</h3>
+            </div>
+            <div class="accordion__content">
+              <div class="accordion__inner">
+                <p class="challenge-item__desc">Donde ponés tu atención cambia lo que sentís, cómo competís y la realidad que experimentás dentro de la cancha.</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Estado energético -->
+          <li class="challenge-item accordion" data-reveal data-reveal-delay="2">
+            <div class="accordion__header">
+              <div class="challenge-item__icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="2 12 5 8 8 14 11 6 14 16 17 10 20 12 22 12"/>
+                </svg>
+              </div>
+              <svg class="accordion__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <h3 class="challenge-item__title">Estado energético</h3>
+            </div>
+            <div class="accordion__content">
+              <div class="accordion__inner">
+                <p class="challenge-item__desc">Entrenamos la energía y la frecuencia interna desde la que competís, para que puedas sostener la mayor parte del tiempo un estado de presencia, confianza y claridad.</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Capacidad de volver -->
+          <li class="challenge-item accordion" data-reveal data-reveal-delay="3">
+            <div class="accordion__header">
+              <div class="challenge-item__icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74"/>
+                  <polyline points="3 3 3 9 9 9"/>
+                </svg>
+              </div>
+              <svg class="accordion__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <h3 class="challenge-item__title">Capacidad de volver</h3>
+            </div>
+            <div class="accordion__content">
+              <div class="accordion__inner">
+                <p class="challenge-item__desc">Entrenamos la capacidad de volver al presente, al foco y a tu mejor estado interno cada vez que te alejás de él.</p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ② CAMINO DE REGRESO -->
+    <section class="regreso" id="regreso">
+      <div class="wrap">
+
+        <!-- Header -->
+        <div class="regreso__head" data-reveal>
+          <p class="regreso__eyebrow">Mucho más que competir</p>
+          <h2 class="regreso__title">
+            Un camino de <em>regreso</em><br>a tu esencia.
+          </h2>
+          <div class="regreso__divider" aria-hidden="true"></div>
+          <p class="regreso__subtitle">
+            No se trata solo de rendir más. Se trata de convertirte en la persona<br>
+            que querés ser y vivir el deporte como una plataforma<br>
+            de transformación personal.
+          </p>
+        </div>
+
+        <!-- 4 cards -->
+        <div class="regreso__grid">
+
+          <!-- CONCIENCIA -->
+          <div class="regreso__card" data-reveal data-reveal-delay="1">
+            <div class="regreso__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                <circle cx="12" cy="12" r="3"/>
+                <line x1="12" y1="5" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="19" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="regreso__card-title">Conciencia</h3>
+            <p class="regreso__card-desc">Aprendemos a observar pensamientos, emociones y comportamientos para comprender cómo influyen en nuestra manera de competir y vivir.</p>
+            <div class="regreso__card-line" aria-hidden="true"></div>
+          </div>
+
+          <!-- CREENCIAS -->
+          <div class="regreso__card" data-reveal data-reveal-delay="2">
+            <div class="regreso__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+                <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+                <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
+                <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/>
+                <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
+              </svg>
+            </div>
+            <h3 class="regreso__card-title">Creencias</h3>
+            <p class="regreso__card-desc">Muchas veces competimos desde historias que aprendimos sobre nosotros mismos. Aprender a reconocerlas nos permite elegir con mayor libertad.</p>
+            <div class="regreso__card-line" aria-hidden="true"></div>
+          </div>
+
+          <!-- ESENCIA -->
+          <div class="regreso__card" data-reveal data-reveal-delay="3">
+            <div class="regreso__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <path d="M12 8.5a1 1 0 0 0 0 7"/>
+                <path d="M12 8.5a1 1 0 0 1 0 7"/>
+              </svg>
+            </div>
+            <h3 class="regreso__card-title">Esencia</h3>
+            <p class="regreso__card-desc">Muchas veces nos alejamos de quienes realmente somos para adaptarnos, encajar o ser reconocidos. Aprendemos a reconectar con nuestra esencia y competir desde un lugar más auténtico.</p>
+            <div class="regreso__card-line" aria-hidden="true"></div>
+          </div>
+
+          <!-- PROPÓSITO -->
+          <div class="regreso__card" data-reveal data-reveal-delay="4">
+            <div class="regreso__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+                <path d="M4.14 15.08c2.62-1.57 5.24-1.43 7.86.42 2.74 1.94 5.49 2 8.23.19"/>
+              </svg>
+            </div>
+            <h3 class="regreso__card-title">Propósito</h3>
+            <p class="regreso__card-desc">Conectamos con aquello que nos inspira, nos da dirección y le da sentido a nuestro esfuerzo.</p>
+            <div class="regreso__card-line" aria-hidden="true"></div>
+          </div>
+
+        </div>
+
+        <!-- Decoración inferior -->
+        <div class="regreso__deco" aria-hidden="true">
+          <span class="regreso__deco-line"></span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent)" class="regreso__deco-star"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <span class="regreso__deco-line"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ③ MARIANO BERNARDINEZ -->
+    <section class="mariano-method bg-dark" id="mariano-metodo">
+      <div class="wrap mariano-method__inner">
+
+        <div class="mariano-method__image" data-reveal>
+          <img src="assets/mariano_bernardinez_new.png" alt="Mariano Bernardinez" loading="lazy" decoding="async">
+        </div>
+
+        <div class="mariano-method__content">
+          <div class="mariano-method__head" data-reveal data-reveal-delay="1">
+            <h2 class="mariano-method__title">Mariano<br>Bernardinez</h2>
+            <p class="mariano-method__role">Mentor de deportistas y fundador de Unlimited Dreams</p>
+            <div class="mariano-method__line"></div>
+            <p class="mariano-method__bio">
+              Mariano acompaña a deportistas en su desarrollo personal a través del deporte. Su trabajo integra conciencia, energía, identidad y propósito para ayudar a cada persona a conocerse mejor, vivir con mayor autenticidad y desarrollar su potencial para convertir sus sueños en realidad.
+            </p>
+            <p class="mariano-method__bio">
+              A través de Unlimited Dreams, comparte el método Be Unlimited, una metodología que entrena la atención, el estado energético y la identidad para ayudar a los deportistas a <em class="mm-accent">competir</em>, <em class="mm-accent">crecer</em> y <em class="mm-accent">vivir</em> con mayor conciencia.
+            </p>
+            <div class="mariano-method__dot" aria-hidden="true"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ⑤ BE UNLIMITED — El Método -->
+    <section class="be-unlimited" id="metodo">
+      <div class="wrap">
+
+        <!-- Header -->
+        <div class="bu__header" data-reveal>
+          <p class="bu__eyebrow">El Método</p>
+          <h2 class="bu__title"><span class="bu__title-be">BE</span> <span class="bu__title-unlimited">UNLIMITED</span></h2>
+          <p class="bu__subtitle">El deporte como plataforma de <em>transformación</em> personal.</p>
+          <div class="bu__divider"></div>
+        </div>
+
+        <!-- Tres pilares -->
+        <div class="bu__pillars">
+
+          <!-- 01 ATENCIÓN -->
+          <div class="bu__pillar" data-reveal data-reveal-delay="1">
+            <span class="bu__num">01</span>
+            <div class="bu__icon" aria-hidden="true">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="26" cy="26" r="5"/>
+                <circle cx="26" cy="26" r="12" stroke-dasharray="4 3"/>
+                <line x1="26" y1="6" x2="26" y2="14"/>
+                <line x1="26" y1="38" x2="26" y2="46"/>
+                <line x1="6" y1="26" x2="14" y2="26"/>
+                <line x1="38" y1="26" x2="46" y2="26"/>
+              </svg>
+            </div>
+            <h3 class="bu__pillar-title">Atención</h3>
+            <p class="bu__pillar-question">¿Dónde está tu foco?</p>
+            <p class="bu__pillar-desc">Donde ponés tu atención cambia lo que sentís, cómo competís y la realidad que experimentás. Entrenamos la capacidad de <strong>elegir</strong> conscientemente dónde poner el foco.</p>
+          </div>
+
+          <!-- 02 ESTADO ENERGÉTICO -->
+          <div class="bu__pillar" data-reveal data-reveal-delay="2">
+            <span class="bu__num">02</span>
+            <div class="bu__icon" aria-hidden="true">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 26 Q10 14 16 26 Q22 38 28 26 Q34 14 40 26 Q46 38 52 26" />
+              </svg>
+            </div>
+            <h3 class="bu__pillar-title">Estado Energético</h3>
+            <p class="bu__pillar-question">¿Desde qué frecuencia competís?</p>
+            <p class="bu__pillar-desc">Entrenamos la energía y la frecuencia interna desde la que competís para sostener <strong>presencia, confianza y claridad.</strong> Tu estado interno determina tu rendimiento.</p>
+          </div>
+
+          <!-- 03 IDENTIDAD -->
+          <div class="bu__pillar" data-reveal data-reveal-delay="3">
+            <span class="bu__num">03</span>
+            <div class="bu__icon" aria-hidden="true">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M26 8 C16 8 10 15 10 22 C10 32 18 38 22 42"/>
+                <path d="M26 8 C36 8 42 15 42 22 C42 32 34 38 30 42"/>
+                <path d="M20 16 C18 19 18 24 20 28 C22 33 24 36 26 40"/>
+                <path d="M32 16 C34 19 34 24 32 28 C30 33 28 36 26 40"/>
+                <path d="M15 20 C19 19 24 19 26 19 C28 19 33 19 37 20"/>
+                <path d="M13 27 C17 26 22 26 26 27 C30 28 35 28 39 27"/>
+              </svg>
+            </div>
+            <h3 class="bu__pillar-title">Identidad</h3>
+            <p class="bu__pillar-question">¿Quién sos cuando competís?</p>
+            <p class="bu__pillar-desc">La manera en la que te percibís define cómo entrénas, competís y respondés bajo presión. Entrenamos conscientemente al deportista <strong>que elegís ser.</strong></p>
+          </div>
+
+        </div>
+
+        <!-- Texto comunidad -->
+        <p class="bu__community" data-reveal>
+          Unlimited Dreams es una comunidad de deportistas que utiliza el deporte como plataforma de transformación personal para conocerse mejor, disfrutar el camino y convertir sus sueños en realidad.
+        </p>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- ⑦ EXPERIENCIAS PASADAS -->
+    <section class="past" id="experiencias">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <h2 class="heading-lg">Experiencias Unlimited</h2>
+          <p class="section-lead">Distintas formas de entrenar el juego interno dentro y fuera de la competencia.</p>
+        </header>
+        <div class="past-grid">
+          <div class="past-item" data-reveal data-reveal-delay="1">
+            <span class="past-item__num">01</span>
+            <h3 class="past-item__title">Mentoría individual</h3>
+            <p class="past-item__desc">Procesos personalizados para deportistas que buscan profundizar su juego interno y transformar su manera de competir.</p>
+          </div>
+          <div class="past-item" data-reveal data-reveal-delay="2">
+            <span class="past-item__num">02</span>
+            <h3 class="past-item__title">Experiencias grupales</h3>
+            <p class="past-item__desc">Entrenamientos vivenciales para equipos y grupos de deportistas enfocados en conciencia, presencia y rendimiento.</p>
+          </div>
+          <div class="past-item" data-reveal data-reveal-delay="3">
+            <span class="past-item__num">03</span>
+            <h3 class="past-item__title">Acompañamiento en competencia</h3>
+            <p class="past-item__desc">Trabajamos junto al deportista antes, durante y después de competencias clave.</p>
+          </div>
+          <div class="past-item" data-reveal data-reveal-delay="4">
+            <span class="past-item__num">04</span>
+            <h3 class="past-item__title">Comunidad Unlimited</h3>
+            <p class="past-item__desc">Acceso a una comunidad de deportistas que entrenan su juego interno, aprenden y se fortalecen entre ellos mientras compiten, crecen y persiguen sus sueños.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑧ HISTORIAS -->
+    <section class="stories" id="historias">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="label">Resultados</p>
+          <h2 class="heading-lg">Historias de transformación</h2>
+        </header>
+        <div class="stories-carousel" id="storiesCarousel" data-reveal>
+          <!-- 
+            INSTRUCCIONES PARA REEMPLAZAR VIDEOS (Devoluciones)
+            ===================================================
+            Para cambiar los videos de esta sección:
+            1. Sube tus nuevos videos en formato .mp4 a la carpeta "assets/Devoluciones/".
+            2. Recomendación: Mantenlos comprimidos (peso bajo) para asegurar una carga rápida.
+            3. En cada etiqueta <video> debajo, cambia la ruta en el atributo src="..." 
+               por el nombre exacto de tu nuevo video. (ej: src="assets/Devoluciones/NUEVO.mp4")
+            4. Modifica también el nombre de la persona en la etiqueta <cite> debajo del video.
+          -->
+          <div class="stories-track" id="storiesTrack">
+
+            <!-- Historia 1: Video -->
+            <div class="story-card story-card--video">
+              <video src="assets/Devoluciones/SanMartin%2001.mp4" controls preload="metadata" style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: var(--r-md); background: #000; display: block;"></video>
+              <footer class="story-card__footer" style="padding-top: 1rem; padding-bottom: 1.5rem; margin-top: 0;">
+                <cite class="story-card__name">Testimonio 1</cite>
+                <p class="story-card__role">San Martín</p>
+              </footer>
+            </div>
+
+            <!-- Historia 2: Video -->
+            <div class="story-card story-card--video">
+              <video src="assets/Devoluciones/SanMartin%2006.mp4" controls preload="metadata" style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: var(--r-md); background: #000; display: block;"></video>
+              <footer class="story-card__footer" style="padding-top: 1rem; padding-bottom: 1.5rem; margin-top: 0;">
+                <cite class="story-card__name">Karen Gordillo</cite>
+                <p class="story-card__role">San Martín</p>
+              </footer>
+            </div>
+
+            <!-- Historia 3: Video -->
+            <div class="story-card story-card--video">
+              <video src="assets/Devoluciones/Tucuman%2001.mp4" controls preload="metadata" style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: var(--r-md); background: #000; display: block;"></video>
+              <footer class="story-card__footer" style="padding-top: 1rem; padding-bottom: 1.5rem; margin-top: 0;">
+                <cite class="story-card__name">Testimonio 3</cite>
+                <p class="story-card__role">Tucumán</p>
+              </footer>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="stories__controls" style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+          <button id="storiesPrev" aria-label="Anterior" style="border: 1px solid var(--gray-300); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: transparent; cursor: pointer; transition: border-color .3s, background .3s;" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='rgba(224,86,22,0.05)'" onmouseout="this.style.borderColor='var(--gray-300)'; this.style.background='transparent'">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button id="storiesNext" aria-label="Siguiente" style="border: 1px solid var(--gray-300); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: transparent; cursor: pointer; transition: border-color .3s, background .3s;" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='rgba(224,86,22,0.05)'" onmouseout="this.style.borderColor='var(--gray-300)'; this.style.background='transparent'">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑩ DISTINTAS PUERTAS DE ENTRADA -->
+    <section class="exp-showcase" id="experiencias-unlimited">
+      <div class="exp-showcase__head" data-reveal>
+        <p class="exp-showcase__eyebrow">Experiencias Unlimited</p>
+        <h2 class="exp-showcase__title">Distintas puertas de entrada.<br><span>Un mismo camino.</span></h2>
+        <p class="exp-showcase__subtitle">Experiencias diseñadas para ayudarte a desarrollar tu juego interno,<br>crecer como persona y acercarte a los sueños que querés construir.</p>
+      </div>
+
+      <div class="exp-showcase__carousel" id="expCarousel" style="width: 100%; cursor: grab; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none;">
+        <!-- 
+          INSTRUCCIONES PARA REEMPLAZAR GIFs (Experiencias)
+          =================================================
+          Para cambiar los GIFs animados de las tarjetas:
+          1. Sube tus nuevos archivos .gif a la carpeta "assets/gifs/".
+          2. En cada tarjeta (.ecard-slide) de abajo verás una etiqueta <img>.
+          3. Cambia el valor de src="..." de esa imagen para que apunte a tu nuevo GIF.
+             (ej: src="assets/gifs/MI_NUEVO_GIF.gif")
+          4. No modifiques las clases ni el estilo en línea para mantener el formato vertical.
+        -->
+        <div class="exp-showcase__track" id="expTrack" style="display: flex; gap: 1.5rem; padding: 2rem var(--pad-x); width: max-content; align-items: center; margin: 0 auto;">
+
+          <!-- 1. El juego interno -->
+          <div class="ecard-slide" style="position: relative; width: clamp(200px, 45vw, 280px); flex-shrink: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,.5); aspect-ratio: 3/4; background: var(--ink);">
+            <img src="assets/gifs/1G.gif" alt="El Juego Interno" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;" loading="lazy" decoding="async">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.9) 0%, rgba(0,0,0,.2) 50%, transparent 100%);"></div>
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.25rem 1.1rem 1.1rem; display: flex; flex-direction: column; gap: .3rem;">
+              <div style="color: var(--accent); margin-bottom: .3rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+              </div>
+              <p style="font-family: var(--font-head); font-size: .78rem; font-weight: 700; letter-spacing: .1em; color: var(--white); text-transform: uppercase; margin:0;">EL JUEGO INTERNO</p>
+              <p style="font-size: .65rem; font-weight: 400; color: rgba(255,255,255,.5); margin-bottom: .2rem; margin:0;">Workshop experiencial</p>
+            </div>
+          </div>
+
+          <!-- 2. Be Unlimited -->
+          <div class="ecard-slide" style="position: relative; width: clamp(200px, 45vw, 280px); flex-shrink: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,.5); aspect-ratio: 3/4; background: var(--ink);">
+            <img src="assets/gifs/2G.gif" alt="Be Unlimited" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;" loading="lazy" decoding="async">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.9) 0%, rgba(0,0,0,.2) 50%, transparent 100%);"></div>
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.25rem 1.1rem 1.1rem; display: flex; flex-direction: column; gap: .3rem;">
+              <div style="color: var(--accent); margin-bottom: .3rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <p style="font-family: var(--font-head); font-size: .78rem; font-weight: 700; letter-spacing: .1em; color: var(--white); text-transform: uppercase; margin:0;">BE UNLIMITED</p>
+              <p style="font-size: .65rem; font-weight: 400; color: rgba(255,255,255,.5); margin-bottom: .2rem; margin:0;">Sesión grupal</p>
+            </div>
+          </div>
+
+          <!-- 3. Mentoría Individual -->
+          <div class="ecard-slide" style="position: relative; width: clamp(200px, 45vw, 280px); flex-shrink: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,.5); aspect-ratio: 3/4; background: var(--ink);">
+            <img src="assets/gifs/3G.gif" alt="Mentoría Individual" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;" loading="lazy" decoding="async">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.9) 0%, rgba(0,0,0,.2) 50%, transparent 100%);"></div>
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.25rem 1.1rem 1.1rem; display: flex; flex-direction: column; gap: .3rem;">
+              <div style="color: var(--accent); margin-bottom: .3rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <p style="font-family: var(--font-head); font-size: .78rem; font-weight: 700; letter-spacing: .1em; color: var(--white); text-transform: uppercase; margin:0;">MENTORÍA INDIVIDUAL</p>
+              <p style="font-size: .65rem; font-weight: 400; color: rgba(255,255,255,.5); margin-bottom: .2rem; margin:0;">Proceso personalizado</p>
+            </div>
+          </div>
+
+          <!-- 4. Retiro Unlimited -->
+          <div class="ecard-slide" style="position: relative; width: clamp(200px, 45vw, 280px); flex-shrink: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,.5); aspect-ratio: 3/4; background: var(--ink);">
+            <img src="assets/gifs/4G.gif" alt="Retiro Unlimited" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;" loading="lazy" decoding="async">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.9) 0%, rgba(0,0,0,.2) 50%, transparent 100%);"></div>
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.25rem 1.1rem 1.1rem; display: flex; flex-direction: column; gap: .3rem;">
+              <div style="color: var(--accent); margin-bottom: .3rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+              </div>
+              <p style="font-family: var(--font-head); font-size: .78rem; font-weight: 700; letter-spacing: .1em; color: var(--white); text-transform: uppercase; margin:0;">RETIRO UNLIMITED</p>
+              <p style="font-size: .65rem; font-weight: 400; color: rgba(255,255,255,.5); margin-bottom: .2rem; margin:0;">Experiencia intensiva</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ⑨ CTA -->
+    <section class="cta" id="unirse">
+      <div class="cta__bg-glow" aria-hidden="true"></div>
+      <div class="wrap cta__inner">
+        <p class="cta__eyebrow" data-reveal>Primer Paso</p>
+        <div class="cta__divider" data-reveal data-reveal-delay="1" aria-hidden="true"></div>
+        <h2 class="cta__title" data-reveal data-reveal-delay="2">
+          El juego interno<br><em>cambia todo.</em>
+        </h2>
+        <p class="cta__desc" data-reveal data-reveal-delay="3">
+          Deportistas más conscientes compiten mejor,<br>
+          disfrutan más el camino y están más cerca<br>
+          de alcanzar sus sueños.
+        </p>
+        <div class="cta__actions" data-reveal data-reveal-delay="4">
+          <a href="#" class="btn btn--cta-dark" id="whatsapp-cta" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Empezá a entrenar tu juego interno
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p class="footer__brand">Unlimited Dreams</p>
+      <nav class="footer__links">
+        <a href="terminos.html" class="footer__link">Términos</a>
+        <a href="privacidad.html" class="footer__link">Privacidad</a>
+        <a href="https://www.instagram.com/marianobernardinez_unlimited/" target="_blank" rel="noopener noreferrer"
+          class="footer__link">Instagram</a>
+      </nav>
+      <p class="footer__copy">
+        &copy; 2026 Unlimited Dreams &mdash; <a href="https://estudioinception.com/" target="_blank"
+          rel="noopener noreferrer">Inception Estudio</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+
+</html>
